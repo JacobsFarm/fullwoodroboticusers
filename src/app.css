@@ -1,0 +1,263 @@
+/*
+ * Huisstijl. De kleuren zijn afgeleid van fullwood.com (blauw #0069AA op wit,
+ * donkerblauw #003D63 voor vlakken, grijs #575757 voor lopende tekst).
+ * Wil je later exact de merkkleuren van Fullwood JOZ: alleen deze tokens aanpassen.
+ */
+:root {
+	--fw-blue: #0069aa;
+	--fw-blue-dark: #003d63;
+	--fw-blue-deep: #002a45;
+	--fw-blue-light: #3b8cc4;
+	--fw-blue-wash: #e8f2f8;
+
+	--fw-ink: #101418;
+	--fw-text: #3f4a53;
+	--fw-muted: #6b7780;
+	--fw-line: #dde3e8;
+	--fw-surface: #ffffff;
+	--fw-surface-alt: #f4f7f9;
+	--fw-bg: #ffffff;
+
+	--fw-warn: #b4560a;
+	--fw-warn-wash: #fdf3e7;
+	--fw-ok: #1d7a4c;
+
+	--fw-radius: 10px;
+	--fw-radius-lg: 16px;
+	--fw-shadow: 0 1px 2px rgb(16 20 24 / 6%), 0 8px 24px -12px rgb(16 20 24 / 18%);
+	--fw-maxw: 1160px;
+
+	--fw-font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+
+	color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background: var(--fw-bg);
+	color: var(--fw-text);
+	font-family: var(--fw-font);
+	font-size: 16px;
+	line-height: 1.65;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: var(--fw-ink);
+	line-height: 1.15;
+	margin: 0 0 0.5em;
+	letter-spacing: -0.015em;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+}
+h2 {
+	font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
+}
+h3 {
+	font-size: 1.15rem;
+}
+
+p {
+	margin: 0 0 1rem;
+}
+
+a {
+	color: var(--fw-blue);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+}
+
+a:hover {
+	color: var(--fw-blue-dark);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+:focus-visible {
+	outline: 3px solid var(--fw-blue-light);
+	outline-offset: 2px;
+	border-radius: 3px;
+}
+
+/* ---------- layout helpers ---------- */
+
+.fw-wrap {
+	width: 100%;
+	max-width: var(--fw-maxw);
+	margin-inline: auto;
+	padding-inline: clamp(1rem, 4vw, 2rem);
+}
+
+.fw-section {
+	padding-block: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.fw-section--alt {
+	background: var(--fw-surface-alt);
+	border-block: 1px solid var(--fw-line);
+}
+
+.fw-lede {
+	font-size: 1.125rem;
+	max-width: 62ch;
+	color: var(--fw-text);
+}
+
+.fw-kicker {
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: 0.75rem;
+	font-weight: 700;
+	color: var(--fw-blue);
+	margin-bottom: 0.75rem;
+}
+
+.fw-grid {
+	display: grid;
+	gap: 1.25rem;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* ---------- components ---------- */
+
+.fw-card {
+	background: var(--fw-surface);
+	border: 1px solid var(--fw-line);
+	border-radius: var(--fw-radius-lg);
+	padding: 1.5rem;
+}
+
+.fw-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.7rem 1.35rem;
+	border-radius: var(--fw-radius);
+	border: 1px solid transparent;
+	background: var(--fw-blue);
+	color: #fff;
+	font: inherit;
+	font-weight: 600;
+	font-size: 0.9rem;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.fw-btn:hover {
+	background: var(--fw-blue-dark);
+	color: #fff;
+}
+
+.fw-btn--ghost {
+	background: transparent;
+	border-color: currentcolor;
+	color: var(--fw-blue-dark);
+}
+
+.fw-btn--ghost:hover {
+	background: var(--fw-blue-dark);
+	border-color: var(--fw-blue-dark);
+	color: #fff;
+}
+
+.fw-btn--on-dark {
+	background: transparent;
+	border-color: rgb(255 255 255 / 60%);
+	color: #fff;
+}
+
+.fw-btn--on-dark:hover {
+	background: #fff;
+	border-color: #fff;
+	color: var(--fw-blue-dark);
+}
+
+.fw-tag {
+	display: inline-block;
+	padding: 0.2rem 0.6rem;
+	border-radius: 999px;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	background: var(--fw-blue-wash);
+	color: var(--fw-blue-dark);
+}
+
+.fw-note {
+	border-left: 3px solid var(--fw-warn);
+	background: var(--fw-warn-wash);
+	padding: 1rem 1.25rem;
+	border-radius: 0 var(--fw-radius) var(--fw-radius) 0;
+	color: #5a3a12;
+}
+
+.fw-note p:last-child {
+	margin-bottom: 0;
+}
+
+.fw-note strong {
+	color: #7a4708;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.skip-link {
+	position: absolute;
+	left: 0.5rem;
+	top: -3rem;
+	z-index: 100;
+	background: var(--fw-blue-dark);
+	color: #fff;
+	padding: 0.6rem 1rem;
+	border-radius: var(--fw-radius);
+	transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+	top: 0.5rem;
+	color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+	}
+}

@@ -1,0 +1,16 @@
+node_modules/
+/build/
+/.svelte-kit/
+/.vercel/
+/.output/
+
+# Door Paraglide gegenereerd bij elke build
+/src/lib/paraglide/
+/.inlang/
+/project.inlang/cache/
+
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example

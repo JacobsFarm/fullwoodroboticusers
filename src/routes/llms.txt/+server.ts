@@ -21,16 +21,19 @@ export function GET() {
 > melkrobots: de Merlin M2 en de generaties daarvoor. De site is niet gelieerd aan
 > Fullwood JOZ. Beschikbaar in het Nederlands, Engels en Duits.
 
-De site bestaat uit drie onderdelen: een overzicht van veelvoorkomende storingen met
-symptomen, mogelijke oorzaken en controlestappen; een kostenoverzicht dat nog in
-opbouw is; en een pagina met de publieke kanalen van Fullwood JOZ en de
+De site bestaat uit vier onderdelen: een overzicht van veelvoorkomende storingen met
+symptomen, mogelijke oorzaken en controlestappen; een kostenoverzicht met een algemene jaarbegroting en een
+boerderijvoorbeeld uit de praktijk; een marktplaats waar gebruikers melkrobots, onderdelen en randapparatuur
+aanbieden of zoeken; en een pagina met de publieke kanalen van Fullwood JOZ en de
 Facebookgroep Fullwood Merlin M2 enthusiasts.
 
 ## Pagina's
 
 - [Home](${url('/')}): introductie en modeloverzicht
 - [Reparaties](${url('/reparaties/')}): ${repairs.length} storingen, verdeeld over ${categories.length} categorieën
-- [Kosten](${url('/kosten/')}): opzet van het kostenoverzicht, cijfers volgen nog
+- [Kosten](${url('/kosten/')}): algemene jaarbegroting van een Merlin M2 (ca. € 11.500 per jaar) met prijsontwikkeling
+- [Boerderijvoorbeeld](${url('/kosten/boerderij/')}): dertien jaar facturen van een Merlin en vier jaar Merlin M2, per jaar en per liter melk
+- [Marktplaats](${url('/marktplaats/')}): aangeboden en gevraagd, geplaatst door gebruikers
 - [Socials](${url('/socials/')}): kanalen en berichten
 
 ## Volledige inhoud
@@ -51,6 +54,16 @@ ${channels
 			group.links.map((link) => `- [${link.label}](${link.href})`).join('\n')
 	)
 	.join('\n\n')}
+
+## Bijdragen
+
+Dit is een gezamenlijk project van de community rond Fullwood: boeren, dealers en
+anderen met belangstelling. Het is geen reclamekanaal. De broncode is volledig open
+source; iedereen kan bijdragen via een issue of een pull request, die voor het
+samenvoegen wordt beoordeeld.
+
+- Issues: ${site.repo}/issues
+- Pull requests: ${site.repo}/pulls
 
 ## Over
 

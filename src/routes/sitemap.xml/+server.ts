@@ -9,7 +9,9 @@ export const trailingSlash = 'never';
 const routes = [
 	{ path: '/', priority: '1.0' },
 	{ path: '/reparaties/', priority: '0.9' },
-	{ path: '/kosten/', priority: '0.7' },
+	{ path: '/kosten/', priority: '0.8' },
+	{ path: '/kosten/boerderij/', priority: '0.7' },
+	{ path: '/marktplaats/', priority: '0.8' },
 	{ path: '/socials/', priority: '0.7' }
 ];
 

@@ -56,10 +56,14 @@ conda create -n fullwood nodejs=22 -y
 | --- | --- |
 | `src/routes/+page.svelte` | Home |
 | `src/routes/reparaties/` | Reparatie-overzicht met zoeken en filters |
-| `src/routes/kosten/` | Kostenoverzicht (opzet staat, cijfers volgen) |
+| `src/routes/kosten/` | Kostenoverzicht: algemene jaarbegroting, prijsontwikkeling en doorklik naar voorbeelden |
+| `src/routes/kosten/boerderij/` | Boerderijvoorbeeld: kosten per jaar 2009–2023 en per gebruiksjaar van de Merlin M2 |
+| `src/lib/data/costs.ts` | **De kostencijfers.** Totalen worden uit de regels berekend |
+| `src/routes/marktplaats/` | Marktplaats met filters en aanmeldformulier |
 | `src/routes/socials/` | Facebook-tijdlijnen en uitgelichte berichten |
 | `src/lib/data/repairs.ts` | **De reparatie-inhoud.** Hier voeg je storingen toe |
 | `src/lib/data/models.ts` | Modellen op de homepage |
+| `src/lib/data/listings.ts` | **De aanbiedingen op de marktplaats** |
 | `src/lib/data/highlights.ts` | Handmatig uitgelichte berichten |
 | `src/lib/config.ts` | Alle kanaal-URL's (Facebook, LinkedIn, YouTube, Instagram) |
 | `messages/{nl,en,de}.json` | Alle vaste teksten, per taal |
@@ -107,6 +111,40 @@ Embeds laden pas nadat de bezoeker op **Laden** klikt, zodat Facebook en YouTube
 ongevraagd cookies plaatsen. De keuze wordt onthouden in localStorage.
 
 Losse berichten die je wilt bewaren zet je in `src/lib/data/highlights.ts`.
+
+## Marktplaats
+
+De site is statisch, dus er is geen server die een aanbieding kan opslaan. De route
+loopt daarom via de repository:
+
+1. Een bezoeker vult het formulier op `/marktplaats/` in.
+2. Het formulier stelt een bericht op en opent een **vooringevuld GitHub-issue** met
+   het label `marktplaats`.
+3. Jij zet de aanbieding bij in `src/lib/data/listings.ts` en sluit het issue.
+4. De push naar `main` publiceert hem.
+
+Wie liever niet via GitHub werkt, ziet een link naar de Facebookgroep.
+Er is ook een issue-template (`.github/ISSUE_TEMPLATE/marktplaats.yml`) voor mensen
+die rechtstreeks op GitHub beginnen.
+
+Liever e-mail dan GitHub? In `src/lib/config.ts`:
+
+```ts
+export const marketplace = {
+	submit: 'mailto',
+	email: 'jouw@adres.nl',
+	issueLabel: 'marktplaats'
+};
+```
+
+De drie aanbiedingen in `listings.ts` zijn voorbeelden. Ze hebben `example: true`,
+krijgen daardoor een zichtbaar label **Voorbeeld** en blijven buiten de structured
+data — zoekmachines zien ze dus nooit als echt aanbod. Verwijder ze zodra er echte
+aanbiedingen zijn.
+
+Elke aanbieding heeft een `status`: `beschikbaar`, `gereserveerd` of `verkocht`.
+Verkochte aanbiedingen blijven staan maar worden grijs weergegeven; in de structured
+data staan ze als `SoldOut`.
 
 ## Toon
 

@@ -1,0 +1,76 @@
+name: Marktplaats — aanbieding
+description: Een melkrobot, onderdelen of randapparatuur aanbieden of zoeken
+title: '[Aangeboden] '
+labels: ['marktplaats']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Wat je hier invult komt op de site te staan, inclusief je contactgegevens.
+        Zet er dus alleen in wat je publiek wilt delen.
+
+        De site controleert aanbiedingen niet en bemiddelt niet bij een transactie.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Soort
+      options:
+        - Aangeboden
+        - Gevraagd
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categorie
+      options:
+        - Melkrobot
+        - Onderdelen
+        - Randapparatuur
+        - Overig
+    validations:
+      required: true
+
+  - type: input
+    id: headline
+    attributes:
+      label: Titel
+      placeholder: Merlin M2, bouwjaar 2018
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Omschrijving
+      description: Staat van het geheel, draaiuren, wat er wel en niet bij zit.
+    validations:
+      required: true
+
+  - type: input
+    id: models
+    attributes:
+      label: Model of modellen
+      placeholder: Merlin M2
+
+  - type: input
+    id: price
+    attributes:
+      label: Prijs
+      placeholder: 'n.o.t.k.'
+
+  - type: input
+    id: location
+    attributes:
+      label: Locatie
+      placeholder: Noord-Holland, NL
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contactgegevens
+      description: Facebook-profiel, e-mailadres of telefoonnummer. Komt op de site te staan.
+    validations:
+      required: true

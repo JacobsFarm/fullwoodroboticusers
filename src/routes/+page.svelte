@@ -4,7 +4,7 @@
 	import { getLocale } from '$lib/paraglide/runtime';
 	import { models } from '$lib/data/models';
 	import type { Locale } from '$lib/data/repairs';
-	import { absoluteUrl } from '$lib/config';
+	import { absoluteUrl, site } from '$lib/config';
 	import Seo from '$lib/components/Seo.svelte';
 
 	const locale = $derived(getLocale() as Locale);
@@ -19,6 +19,11 @@
 			href: `${base}/kosten/`,
 			title: m.home_card_costs_title(),
 			body: m.home_card_costs_body()
+		},
+		{
+			href: `${base}/marktplaats/`,
+			title: m.home_card_market_title(),
+			body: m.home_card_market_body()
 		},
 		{
 			href: `${base}/socials/`,
@@ -94,6 +99,30 @@
 </section>
 
 <section class="fw-section">
+	<div class="fw-wrap">
+		<div class="community">
+			<div class="community__lead">
+			<p class="fw-kicker">{m.home_community_title()}</p>
+				<p class="fw-lede">{m.home_community_body()}</p>
+			</div>
+
+			<div class="community__body">
+				<p>{m.home_community_open()}</p>
+				<p>{m.home_community_disagree()}</p>
+				<div class="community__actions">
+					<a class="fw-btn" href={site.repo} target="_blank" rel="noopener">
+						{m.home_community_cta_repo()}
+					</a>
+					<a class="fw-btn fw-btn--ghost" href="{site.repo}/issues" target="_blank" rel="noopener">
+						{m.home_community_cta_issues()}
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="fw-section fw-section--alt">
 	<div class="fw-wrap">
 		<h2>{m.home_models_title()}</h2>
 		<p class="fw-lede">{m.home_models_intro()}</p>
@@ -213,6 +242,39 @@
 		color: var(--fw-blue);
 		font-weight: 600;
 		font-size: 0.9rem;
+	}
+
+	.community {
+		display: grid;
+		gap: 1.5rem;
+		align-items: start;
+		padding: clamp(1.75rem, 4vw, 2.5rem);
+		border: 1px solid var(--fw-line);
+		border-left: 4px solid var(--fw-blue);
+		border-radius: var(--fw-radius-lg);
+		background: var(--fw-surface);
+	}
+
+	.community__body p {
+		max-width: 60ch;
+	}
+
+	.community__actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin-top: 1.5rem;
+	}
+
+	.community__body p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: 860px) {
+		.community {
+			grid-template-columns: minmax(240px, 1fr) 1.4fr;
+			gap: 2.5rem;
+		}
 	}
 
 	.models {

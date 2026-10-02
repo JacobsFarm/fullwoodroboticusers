@@ -111,3 +111,18 @@ export const channels: ChannelGroup[] = [
 
 /** Alle kanaal-URL's plat, voor sameAs in de structured data. */
 export const allChannelUrls = channels.flatMap((group) => group.links.map((link) => link.href));
+
+/**
+ * Marktplaats. De site is statisch, dus een aanbieding kan niet worden opgeslagen.
+ * Het formulier bouwt daarom een bericht en opent dat op de gekozen manier:
+ *
+ *   'github' — vooringevuld issue in de repository (standaard, geen extra dienst)
+ *   'mailto' — mailprogramma van de bezoeker, naar `email` hieronder
+ *
+ * Vul bij 'mailto' een adres in dat je publiek wilt tonen.
+ */
+export const marketplace = {
+	submit: 'github' as 'github' | 'mailto',
+	email: '',
+	issueLabel: 'marktplaats'
+};

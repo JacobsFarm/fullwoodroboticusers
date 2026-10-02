@@ -27,28 +27,193 @@
 	"home_card_repairs_title": "Repairs",
 	"home_card_repairs_body": "Common faults with symptoms, possible causes and checking steps.",
 	"home_card_costs_title": "Cost overview",
-	"home_card_costs_body": "Yearly cost items for service, consumables and parts. Under construction.",
+	"home_card_costs_body": "A general yearly budget and a farm example with thirteen years of invoices.",
 	"home_card_socials_title": "Socials",
 	"home_card_socials_body": "Posts from the Fullwood JOZ channels and from the Facebook group.",
 	"home_card_link": "Open",
+
+	"home_community_title": "A shared project",
+	"home_community_body": "This site belongs to the community around Fullwood: farmers, dealers and anyone else with an interest. It is not an advertising channel.",
+	"home_community_open": "The source code is fully open. Anyone is free to contribute: add text, add a fault, correct a mistake.",
+	"home_community_disagree": "Disagree with something? Raise it in the issues, or send a pull request. It is reviewed before it is merged.",
+	"home_community_cta_repo": "View the source code",
+	"home_community_cta_issues": "Go to the issues",
 
 	"home_models_title": "Models",
 	"home_models_intro": "This site covers the Merlin M2 and the generations before it.",
 	"home_models_note": "Details to be added",
 
 	"costs_title": "Cost overview",
-	"costs_intro": "Overview of the yearly cost items of a Fullwood milking robot, based on figures from users.",
-	"costs_wip_title": "Under construction",
-	"costs_wip_body": "This page will be filled in once figures have been collected. The structure below is in place.",
-	"costs_planned_title": "Planned sections",
-	"costs_plan_1": "Service contract and hourly rates",
-	"costs_plan_2": "Wear parts: liners, hoses, filters",
-	"costs_plan_3": "Cleaning agents and consumables",
-	"costs_plan_4": "Energy, water and compressed air",
-	"costs_plan_5": "Major components and service life",
-	"costs_plan_6": "Cost per cow and per 100 kg of milk",
-	"costs_contribute_title": "Submitting figures",
+
+	"costs_intro": "What does a Fullwood Merlin cost per year? First a general budget, then a dairy farm that kept track of every invoice.",
+
+	"costs_why_title": "Why this overview",
+	"costs_why_1": "When buying a milking robot, attention goes to the price of the robot itself. What it costs every year afterwards in cleaning agents, parts, service, licences, water and electricity is much harder to find.",
+	"costs_why_2": "The manual gives consumption figures, but practice differs. At 180 milkings a day, measured use of teat dip and disinfectant comes to 20 and 16 jerrycans a year, where the user manual arrives at 65.",
+	"costs_why_3": "That is why this is a budget based on actual use, with the calculation shown for every item. You can adjust it for your own farm: more or fewer milkings, different prices.",
+	"costs_why_4": "Prices also change quickly. Acid cleaner now costs about {acid} more than in 2019, and electricity more than twice the price noted earlier. An old cost picture is soon out of date.",
+	"costs_why_note_title": "An indication, not a quote",
+	"costs_why_note_body": "The amounts come from one user and show the order of magnitude. Your farm, region and supplier may differ.",
+
+	"costs_basis_title": "Basis",
+	"costs_basis_body": "All amounts assume {milkings} milkings, {hot} hot cleanings and {rinses} rinses of the Merlin M2 per day. That is {perYear} milkings per year.",
+
+	"costs_budget_title": "General yearly budget",
+	"costs_budget_lede": "What a Merlin M2 costs per year in supplies, water, electricity, service and licences.",
+
+	"costs_total_label": "Total per year",
+	"costs_total_hint": "excluding unforeseen repairs",
+
+	"costs_per_milking_label": "Per milking",
+	"costs_per_milking_hint": "total divided by milkings per year",
+
+	"costs_biggest_label": "Largest item",
+	"costs_biggest_hint": "{share} of the total",
+
+	"costs_share_title": "Where does the money go?",
+	"costs_share_aria": "Split of yearly costs by category",
+
+	"costs_unforeseen_value": "cannot be budgeted",
+
+	"costs_detail_title": "All items",
+
+	"costs_col_item": "Item",
+	"costs_col_year": "Per year",
+
+	"costs_group_total": "Subtotal",
+
+	"costs_grand_total": "Total per year",
+
+	"costs_prices_title": "Prices are rising",
+	"costs_prices_lede": "The 2023 price next to earlier prices from invoices and orders.",
+	"costs_prices_item": "Product",
+	"costs_prices_earlier": "Earlier",
+	"costs_prices_now": "2023",
+	"costs_prices_change": "Change",
+	"costs_prices_unknown_date": "date unknown",
+	"costs_prices_note": "The change is calculated against the oldest price in the overview. For water and electricity the date of the old price is not known.",
+
+	"costs_farms_title": "Farm examples",
+	"costs_farms_lede": "A budget is a calculation. Here you see what it was in practice: the invoices of a real farm, year by year.",
+
+	"costs_farm1_title": "Dairy farm with a Merlin and a Merlin M2",
+	"costs_farm1_body": "Thirteen years with a Merlin, since 2022 a Merlin M2. All costs per year, per item and per litre of milk.",
+	"costs_farm1_meta": "{milkings} milkings a day · 2009 to 2026",
+	"costs_farm1_stat": "{cents} per litre of milk over 13 years, purchase and maintenance combined",
+
+	"costs_farm_open": "View the example",
+
+	"costs_contribute_title": "Add your farm?",
 	"costs_contribute_body": "Invoices or yearly totals can be posted in the group. They are included here anonymised.",
+
+	"farm_back": "Back to the cost overview",
+
+	"farm_kicker": "Farm example",
+
+	"farm_title": "13 years of Merlin and the switch to the M2",
+
+	"farm_intro": "A dairy farm with {milkings} milkings a day. A Merlin since 2009, a Merlin M2 since August 2022. Here are all recorded costs: per year, per item and per litre of milk.",
+
+	"farm_stat_years": "13 years",
+	"farm_stat_years_label": "milked with the first Merlin",
+	"farm_stat_total_label": "purchase plus maintenance over 13 years",
+	"farm_stat_cents_label": "per litre of milk, purchase and maintenance combined",
+	"farm_stat_m2_label": "average per year with the M2 (years 1 to 4)",
+
+	"farm_why_title": "Why these figures",
+	"farm_why_1": "Invoices quickly disappear into the accounts and are rarely added up over the years. This farm kept every invoice around the milking robot and added them up per year, so you can see what a robot costs over its whole life.",
+	"farm_why_2": "The aim is not to prove that a robot is cheap or expensive, but to show what to expect: which items are fixed, which fluctuate, and what one large repair does to a year.",
+	"farm_why_3": "This farmer’s rule of thumb: a milking robot costs 3 to 5 cents per litre of milk.",
+
+	"farm_method_title": "What is and is not counted",
+	"farm_method_1": "All amounts come from invoices from the dealer and from suppliers of cleaning agents.",
+	"farm_method_2": "One-off purchases, such as the installation, a new cooling machine or a pasture box, are listed separately and are not part of the yearly costs.",
+	"farm_method_3": "Water and electricity are not included.",
+	"farm_method_4": "The calendar years 2009 to 2023 include VAT; the usage years of the Merlin M2 exclude VAT.",
+
+	"farm_years_title": "Costs per year, 2009 to 2023",
+	"farm_years_lede": "What the robot cost per calendar year in service, parts and licences. One-off items are listed below the chart.",
+
+	"farm_series_dealer": "Dealer: service, parts, licences",
+	"farm_series_third": "Cleaning agents from third parties",
+	"farm_series_estimate": "Estimate, no data",
+
+	"farm_marker_m2": "Merlin M2 from Aug 2022",
+
+	"farm_years_aria": "Costs per calendar year from 2009 to 2023",
+
+	"farm_total": "Total",
+
+	"farm_years_avg": "On average {avg} per year over the 13 years with the first Merlin (2009 to 2022). There is no data for 2012 and 2013; {estimate} per year was estimated for those.",
+	"farm_years_avg_note": "This average follows the total of {total}, which the owner adjusted by {adjustment}.",
+
+	"farm_table_toggle": "Table with all years",
+	"farm_table_year": "Year",
+	"farm_table_cost": "Yearly cost",
+	"farm_table_excluded": "Not counted",
+	"farm_table_note": "Notes",
+
+	"farm_estimate_tag": "estimate",
+
+	"farm_m2_title": "Merlin M2: year by year",
+	"farm_m2_lede": "Per usage year from the installation in August 2022, split into categories. Open a year to see every line.",
+	"farm_m2_aria": "Costs per usage year of the Merlin M2, by category",
+
+	"farm_year": "Year {n}",
+	"farm_year_ongoing": "in progress",
+
+	"farm_ongoing_note": "Year 4 is still running and is not complete; the total is still growing.",
+
+	"farm_per_liter": "Per litre",
+
+	"farm_liters": "Litres of milk",
+
+	"farm_labour": "Of which labour",
+	"farm_labour_unknown": "not recorded",
+
+	"farm_lines_open": "All lines of year {n}",
+
+	"farm_oneoffs": "Not counted (one-off)",
+
+	"farm_overview_title": "The four years side by side",
+
+	"farm_col_category": "Category",
+	"farm_col_avg": "Average",
+
+	"farm_row_total": "Total",
+	"farm_row_per_liter": "Per litre of milk",
+
+	"farm_compare_title": "Budget and practice side by side",
+	"farm_compare_lede": "The general budget assumes 180 milkings a day; this farm milks 120 times a day. Below, the average of years 1 to 4 next to the budget, without water and electricity.",
+	"farm_compare_budget": "Budget (180 a day)",
+	"farm_compare_practice": "Practice (120 a day)",
+	"farm_compare_not_budgeted": "not budgeted",
+	"farm_compare_conclusion": "The difference is mostly in service, repairs and the milk tank and cooling. These items are missing from the budget or were estimated lower. Chemicals and consumables come out lower in practice, in line with 120 instead of 180 milkings a day.",
+
+	"farm_life_title": "Purchase and total cost per litre",
+	"farm_life_lede": "Over 13 years with the first Merlin: what the installation cost and what maintenance added.",
+	"farm_life_aria": "Split between purchase and maintenance over 13 years",
+	"farm_life_purchase": "Purchase of the complete installation (2009)",
+	"farm_life_maintenance": "Maintenance and repairs (13 years)",
+	"farm_life_liters": "A total of {liters} litres of milk in 13 years. Purchase {purchase} per litre, maintenance {maintenance} per litre.",
+
+	"farm_purchases_title": "Purchase prices",
+	"farm_purchases_note": "The complete 2009 installation includes assembly, preparatory work, pedometers and accessories, and is therefore higher than the robot and tank combined.",
+
+	"farm_col_excl": "Excl. VAT",
+	"farm_col_vat": "VAT",
+	"farm_col_incl": "Incl. VAT",
+
+	"farm_life_remarks": "Replacing the robot with the Merlin M2 came out cheaper thanks to less labour and changes to the barn. According to the owner, the screw compressor and the milk tank can last for years.",
+
+	"farm_notes_title": "Assumptions used",
+	"farm_notes_1": "{milkings} milkings a day.",
+	"farm_notes_2": "Merlin M2 bought in January 2022, installed on 18 August 2022.",
+	"farm_notes_3": "Chemicals are a continuous stock with peaks in ordering, so the amount per year can shift.",
+	"farm_notes_4": "The periods of the M2 years are derived from the invoice dates.",
+
+	"farm_cta_title": "Share your figures too?",
+	"farm_cta_back": "To the cost overview",
 
 	"repairs_title": "Repairs",
 	"repairs_intro": "Faults that occur more often, with symptoms, possible causes and checking steps.",
@@ -86,6 +251,48 @@
 	"socials_consent_title": "Load external content",
 	"socials_consent_body": "The timelines come from Facebook and YouTube. Those parties may set cookies. Load them?",
 	"socials_consent_accept": "Load",
+
+	"market_title": "Marketplace",
+	"market_intro": "Offered and wanted by users: milking robots, parts and peripherals.",
+	"market_search_label": "Search",
+	"market_search_placeholder": "Search by model, part or location",
+	"market_filter_all": "All",
+	"market_kind_offer": "Offered",
+	"market_kind_wanted": "Wanted",
+	"market_status_available": "Available",
+	"market_status_reserved": "Reserved",
+	"market_status_sold": "Sold",
+	"market_results": "{count} listings",
+	"market_none": "No listings for this selection.",
+	"market_price": "Price",
+	"market_location": "Location",
+	"market_posted": "Posted",
+	"market_models": "Models",
+	"market_contact": "Contact",
+	"market_example": "Example",
+	"market_disclaimer_title": "About the listings",
+	"market_disclaimer_body": "Listings are placed by users. This site does not check them, does not mediate and is not a party to any transaction. Price, viewing, transport and payment are arranged between buyer and seller.",
+	"market_submit_title": "Place a listing",
+	"market_submit_body": "Fill in the fields. The form composes a message and opens it; the listing is then added here.",
+	"market_form_kind": "Type",
+	"market_form_category": "Category",
+	"market_form_headline": "Title",
+	"market_form_description": "Description",
+	"market_form_models": "Model or models",
+	"market_form_price": "Price",
+	"market_form_location": "Location",
+	"market_form_contact": "Contact details",
+	"market_form_contact_hint": "How can an interested party reach you? For example a Facebook profile, email address or phone number. What you enter here will appear on the site.",
+	"market_form_optional": "optional",
+	"market_form_submit": "Compose message",
+	"market_form_note_github": "The message opens as a new issue on GitHub. A GitHub account is required for that.",
+	"market_form_note_mailto": "The message opens in your email program.",
+	"market_form_alt": "Rather not use the form? Post the listing in the Facebook group.",
+	"market_form_incomplete": "Please enter at least a title and a description.",
+
+	"nav_market": "Marketplace",
+	"home_card_market_title": "Marketplace",
+	"home_card_market_body": "Offered and wanted: milking robots, parts and peripherals.",
 
 	"footer_about_title": "About this site",
 	"footer_about_body": "Open source collection of information about Fullwood milking robots, maintained by users.",

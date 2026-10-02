@@ -10,6 +10,7 @@
 		{ href: `${base}/`, label: m.nav_home() },
 		{ href: `${base}/reparaties/`, label: m.nav_repairs() },
 		{ href: `${base}/kosten/`, label: m.nav_costs() },
+		{ href: `${base}/marktplaats/`, label: m.nav_market() },
 		{ href: `${base}/socials/`, label: m.nav_socials() }
 	]);
 

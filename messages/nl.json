@@ -27,28 +27,193 @@
 	"home_card_repairs_title": "Reparaties",
 	"home_card_repairs_body": "Veelvoorkomende storingen met symptomen, mogelijke oorzaken en controlestappen.",
 	"home_card_costs_title": "Kostenoverzicht",
-	"home_card_costs_body": "Jaarlijkse kostenposten voor onderhoud, verbruik en onderdelen. In opbouw.",
+	"home_card_costs_body": "Een algemene jaarbegroting en een boerderijvoorbeeld met dertien jaar facturen.",
 	"home_card_socials_title": "Socials",
 	"home_card_socials_body": "Berichten van de kanalen van Fullwood JOZ en van de Facebookgroep.",
 	"home_card_link": "Openen",
+
+	"home_community_title": "Een gezamenlijk project",
+	"home_community_body": "Deze site is van de community rond Fullwood: boeren, dealers en anderen met belangstelling. Het is geen reclamekanaal.",
+	"home_community_open": "De broncode is volledig open source. Iedereen is vrij om bij te dragen: tekst aanvullen, een storing toevoegen, een fout corrigeren.",
+	"home_community_disagree": "Ben je het ergens niet mee eens? Zet het in de issues, of stuur een pull request in. Die wordt beoordeeld voordat hij wordt samengevoegd.",
+	"home_community_cta_repo": "Broncode bekijken",
+	"home_community_cta_issues": "Naar de issues",
 
 	"home_models_title": "Modellen",
 	"home_models_intro": "Deze site gaat over de Merlin M2 en de generaties daarvoor.",
 	"home_models_note": "Gegevens nog aanvullen",
 
 	"costs_title": "Kostenoverzicht",
-	"costs_intro": "Overzicht van de jaarlijkse kostenposten van een Fullwood melkrobot, gebaseerd op cijfers van gebruikers.",
-	"costs_wip_title": "Nog in opbouw",
-	"costs_wip_body": "Deze pagina wordt gevuld zodra er cijfers zijn verzameld. De indeling hieronder staat klaar.",
-	"costs_planned_title": "Geplande onderdelen",
-	"costs_plan_1": "Serviceabonnement en uurtarieven",
-	"costs_plan_2": "Slijtdelen: tepelvoeringen, slangen, filters",
-	"costs_plan_3": "Reinigingsmiddelen en verbruik",
-	"costs_plan_4": "Energie, water en perslucht",
-	"costs_plan_5": "Grote onderdelen en levensduur",
-	"costs_plan_6": "Kosten per koe en per 100 kg melk",
-	"costs_contribute_title": "Cijfers aanleveren",
+
+	"costs_intro": "Wat kost een Fullwood Merlin per jaar? Eerst een algemene begroting, daarna een melkveebedrijf dat alle facturen heeft bijgehouden.",
+
+	"costs_why_title": "Waarom dit overzicht",
+	"costs_why_1": "Bij de aanschaf van een melkrobot gaat de aandacht naar de prijs van de robot zelf. Wat hij daarna elk jaar kost aan reinigingsmiddelen, onderdelen, onderhoud, licenties, water en stroom is veel moeilijker te vinden.",
+	"costs_why_2": "De handleiding geeft verbruikscijfers, maar de praktijk wijkt daar af. Bij 180 melkingen per dag komt het gemeten verbruik van dip- en desinfectiemiddel uit op 20 en 16 jerrycans per jaar, terwijl de gebruikshandleiding op 65 uitkomt.",
+	"costs_why_3": "Daarom staat hier een begroting op basis van eigen verbruik, met bij elke post de berekening erachter. Zo kun je zelf bijstellen voor jouw bedrijf: meer of minder melkingen, andere prijzen.",
+	"costs_why_4": "Prijzen veranderen bovendien snel. Zuur reinigingsmiddel kost nu ongeveer {acid} meer dan in 2019 en stroom meer dan twee keer zoveel als de eerder genoteerde prijs. Een oud kostenplaatje is dus snel achterhaald.",
+	"costs_why_note_title": "Een indicatie, geen offerte",
+	"costs_why_note_body": "De bedragen komen van één gebruiker en geven de orde van grootte. Jouw bedrijf, regio en leverancier kunnen afwijken.",
+
+	"costs_basis_title": "Uitgangspunt",
+	"costs_basis_body": "Alle bedragen gaan uit van {milkings} melkingen, {hot} hete reinigingen en {rinses} spoelingen van de Merlin M2 per dag. Dat zijn {perYear} melkingen per jaar.",
+
+	"costs_budget_title": "Algemene begroting per jaar",
+	"costs_budget_lede": "Wat een Merlin M2 op jaarbasis kost aan gebruiksmiddelen, water, stroom, onderhoud en licenties.",
+
+	"costs_total_label": "Totaal per jaar",
+	"costs_total_hint": "exclusief onvoorziene reparaties",
+
+	"costs_per_milking_label": "Per melking",
+	"costs_per_milking_hint": "totaal gedeeld door melkingen per jaar",
+
+	"costs_biggest_label": "Grootste post",
+	"costs_biggest_hint": "{share} van het totaal",
+
+	"costs_share_title": "Waar gaat het geld heen?",
+	"costs_share_aria": "Verdeling van de jaarkosten over categorieën",
+
+	"costs_unforeseen_value": "niet te begroten",
+
+	"costs_detail_title": "Alle posten",
+
+	"costs_col_item": "Post",
+	"costs_col_year": "Per jaar",
+
+	"costs_group_total": "Subtotaal",
+
+	"costs_grand_total": "Totaal per jaar",
+
+	"costs_prices_title": "Prijzen lopen op",
+	"costs_prices_lede": "De prijs in 2023 naast eerdere prijzen uit facturen en bestellingen.",
+	"costs_prices_item": "Product",
+	"costs_prices_earlier": "Eerder",
+	"costs_prices_now": "2023",
+	"costs_prices_change": "Verschil",
+	"costs_prices_unknown_date": "datum onbekend",
+	"costs_prices_note": "Het verschil is berekend ten opzichte van de oudste prijs in het overzicht. Bij water en stroom is de datum van de oude prijs niet bekend.",
+
+	"costs_farms_title": "Boerderijvoorbeelden",
+	"costs_farms_lede": "Een begroting is een rekensom. Hier zie je wat het in de praktijk was: de facturen van een echt bedrijf, jaar voor jaar.",
+
+	"costs_farm1_title": "Melkveebedrijf met Merlin en Merlin M2",
+	"costs_farm1_body": "Dertien jaar een Merlin, sinds 2022 een Merlin M2. Alle kosten per jaar, per post en per liter melk.",
+	"costs_farm1_meta": "{milkings} melkingen per dag · 2009 tot 2026",
+	"costs_farm1_stat": "{cents} per liter melk over 13 jaar, aanschaf en onderhoud samen",
+
+	"costs_farm_open": "Bekijk het voorbeeld",
+
+	"costs_contribute_title": "Jouw bedrijf erbij?",
 	"costs_contribute_body": "Facturen of jaartotalen kun je in de groep plaatsen. Ze worden hier geanonimiseerd opgenomen.",
+
+	"farm_back": "Terug naar het kostenoverzicht",
+
+	"farm_kicker": "Boerderijvoorbeeld",
+
+	"farm_title": "13 jaar Merlin en de overstap naar de M2",
+
+	"farm_intro": "Een melkveebedrijf met {milkings} melkingen per dag. Sinds 2009 een Merlin, sinds augustus 2022 een Merlin M2. Hier staan alle bijgehouden kosten: per jaar, per post en per liter melk.",
+
+	"farm_stat_years": "13 jaar",
+	"farm_stat_years_label": "gemolken met de eerste Merlin",
+	"farm_stat_total_label": "aanschaf plus onderhoud in 13 jaar",
+	"farm_stat_cents_label": "per liter melk, aanschaf en onderhoud samen",
+	"farm_stat_m2_label": "gemiddeld per jaar met de M2 (jaar 1 t/m 4)",
+
+	"farm_why_title": "Waarom deze cijfers",
+	"farm_why_1": "Facturen verdwijnen snel in de boekhouding en worden zelden over de jaren bij elkaar opgeteld. Dit bedrijf heeft alle facturen rond de melkrobot bewaard en per jaar opgeteld, zodat je kunt zien wat een robot over zijn hele levensduur kost.",
+	"farm_why_2": "Het doel is niet te bewijzen dat een robot goedkoop of duur is, maar te laten zien wat je kunt verwachten: welke posten vast zijn, welke schommelen en wat één grote reparatie met een jaar doet.",
+	"farm_why_3": "De vuistregel van deze melkveehouder: een melkrobot kost 3 tot 5 cent per liter melk.",
+
+	"farm_method_title": "Wat wel en niet is meegeteld",
+	"farm_method_1": "Alle bedragen komen uit facturen van de dealer en van leveranciers van reinigingsmiddelen.",
+	"farm_method_2": "Eenmalige aanschaffen, zoals de installatie, een nieuwe koelmachine of een weidebox, staan apart en zitten niet in de jaarkosten.",
+	"farm_method_3": "Water en stroom zijn niet meegeteld.",
+	"farm_method_4": "De kalenderjaren 2009 tot en met 2023 zijn inclusief btw, de gebruiksjaren van de Merlin M2 exclusief btw.",
+
+	"farm_years_title": "Kosten per jaar, 2009 tot en met 2023",
+	"farm_years_lede": "Wat de robot per kalenderjaar kostte aan onderhoud, onderdelen en licenties. Eenmalige posten staan onder de grafiek.",
+
+	"farm_series_dealer": "Dealer: onderhoud, onderdelen, licenties",
+	"farm_series_third": "Reinigingsmiddelen bij derden",
+	"farm_series_estimate": "Schatting, geen gegevens",
+
+	"farm_marker_m2": "Merlin M2 vanaf aug 2022",
+
+	"farm_years_aria": "Kosten per kalenderjaar van 2009 tot en met 2023",
+
+	"farm_total": "Totaal",
+
+	"farm_years_avg": "Gemiddeld {avg} per jaar over de 13 jaar met de eerste Merlin (2009 tot en met 2022). Voor 2012 en 2013 zijn geen gegevens; daar is {estimate} per jaar geschat.",
+	"farm_years_avg_note": "Dit gemiddelde volgt het totaal van {total}, dat de eigenaar met {adjustment} heeft gecorrigeerd.",
+
+	"farm_table_toggle": "Tabel met alle jaren",
+	"farm_table_year": "Jaar",
+	"farm_table_cost": "Jaarkosten",
+	"farm_table_excluded": "Niet meegeteld",
+	"farm_table_note": "Toelichting",
+
+	"farm_estimate_tag": "schatting",
+
+	"farm_m2_title": "Merlin M2: jaar voor jaar",
+	"farm_m2_lede": "Per gebruiksjaar vanaf de installatie in augustus 2022, verdeeld in categorieën. Open een jaar om elke regel te zien.",
+	"farm_m2_aria": "Kosten per gebruiksjaar van de Merlin M2, per categorie",
+
+	"farm_year": "Jaar {n}",
+	"farm_year_ongoing": "lopend",
+
+	"farm_ongoing_note": "Jaar 4 loopt nog en is niet compleet; het totaal groeit nog.",
+
+	"farm_per_liter": "Per liter",
+
+	"farm_liters": "Liters melk",
+
+	"farm_labour": "Waarvan arbeid",
+	"farm_labour_unknown": "niet bijgehouden",
+
+	"farm_lines_open": "Alle regels van jaar {n}",
+
+	"farm_oneoffs": "Niet meegeteld (eenmalig)",
+
+	"farm_overview_title": "De vier jaar naast elkaar",
+
+	"farm_col_category": "Categorie",
+	"farm_col_avg": "Gemiddeld",
+
+	"farm_row_total": "Totaal",
+	"farm_row_per_liter": "Per liter melk",
+
+	"farm_compare_title": "Begroting en praktijk naast elkaar",
+	"farm_compare_lede": "De algemene begroting rekent met 180 melkingen per dag, dit bedrijf melkt 120 keer per dag. Hieronder het gemiddelde van jaar 1 tot en met 4 naast de begroting, zonder water en stroom.",
+	"farm_compare_budget": "Begroting (180 per dag)",
+	"farm_compare_practice": "Praktijk (120 per dag)",
+	"farm_compare_not_budgeted": "niet begroot",
+	"farm_compare_conclusion": "Het verschil zit vooral in onderhoud, reparaties en melktank en koeling. Dat zijn posten die in de begroting ontbreken of lager zijn ingeschat. De chemicaliën en verbruiksmiddelen vallen in de praktijk lager uit, passend bij 120 in plaats van 180 melkingen per dag.",
+
+	"farm_life_title": "Aanschaf en totale kosten per liter",
+	"farm_life_lede": "Over 13 jaar met de eerste Merlin: wat de installatie kostte en wat het onderhoud erbij kwam.",
+	"farm_life_aria": "Verdeling van aanschaf en onderhoud over 13 jaar",
+	"farm_life_purchase": "Aanschaf complete installatie (2009)",
+	"farm_life_maintenance": "Onderhoud en reparaties (13 jaar)",
+	"farm_life_liters": "Totaal {liters} liter melk in 13 jaar. Aanschaf {purchase} per liter, onderhoud {maintenance} per liter.",
+
+	"farm_purchases_title": "Aankoopprijzen",
+	"farm_purchases_note": "De complete installatie van 2009 is inclusief montage, voorbereidend werk, stappentellers en toebehoren, en daarom hoger dan de robot en tank samen.",
+
+	"farm_col_excl": "Excl. btw",
+	"farm_col_vat": "Btw",
+	"farm_col_incl": "Incl. btw",
+
+	"farm_life_remarks": "De vervanging door de Merlin M2 viel goedkoper uit door minder arbeid en aanpassingen aan de stal. De schroefcompressor en de melktank kunnen volgens de eigenaar nog jaren mee.",
+
+	"farm_notes_title": "Gebruikte uitgangspunten",
+	"farm_notes_1": "{milkings} melkingen per dag.",
+	"farm_notes_2": "Merlin M2 gekocht in januari 2022, geïnstalleerd op 18 augustus 2022.",
+	"farm_notes_3": "Chemicaliën zijn een doorlopende voorraad met pieken in bestellingen; per jaar kan het bedrag dus schuiven.",
+	"farm_notes_4": "De perioden van de M2-jaren zijn afgeleid van de factuurdatums.",
+
+	"farm_cta_title": "Ook je cijfers delen?",
+	"farm_cta_back": "Naar het kostenoverzicht",
 
 	"repairs_title": "Reparaties",
 	"repairs_intro": "Storingen die vaker voorkomen, met symptomen, mogelijke oorzaken en controlestappen.",
@@ -86,6 +251,48 @@
 	"socials_consent_title": "Externe inhoud laden",
 	"socials_consent_body": "De tijdlijnen komen van Facebook en YouTube. Die partijen kunnen daarbij cookies plaatsen. Laden?",
 	"socials_consent_accept": "Laden",
+
+	"market_title": "Marktplaats",
+	"market_intro": "Aangeboden en gevraagd door gebruikers: melkrobots, onderdelen en randapparatuur.",
+	"market_search_label": "Zoeken",
+	"market_search_placeholder": "Zoek op model, onderdeel of plaats",
+	"market_filter_all": "Alles",
+	"market_kind_offer": "Aangeboden",
+	"market_kind_wanted": "Gevraagd",
+	"market_status_available": "Beschikbaar",
+	"market_status_reserved": "Gereserveerd",
+	"market_status_sold": "Verkocht",
+	"market_results": "{count} aanbiedingen",
+	"market_none": "Geen aanbiedingen voor deze selectie.",
+	"market_price": "Prijs",
+	"market_location": "Locatie",
+	"market_posted": "Geplaatst",
+	"market_models": "Modellen",
+	"market_contact": "Contact",
+	"market_example": "Voorbeeld",
+	"market_disclaimer_title": "Over de aanbiedingen",
+	"market_disclaimer_body": "Aanbiedingen zijn geplaatst door gebruikers. Deze site controleert ze niet, bemiddelt niet en is geen partij bij een transactie. Afspraken over prijs, bezichtiging, transport en betaling maak je onderling.",
+	"market_submit_title": "Aanbieding plaatsen",
+	"market_submit_body": "Vul de velden in. Het formulier stelt een bericht op en opent dat; daarna wordt de aanbieding hier toegevoegd.",
+	"market_form_kind": "Soort",
+	"market_form_category": "Categorie",
+	"market_form_headline": "Titel",
+	"market_form_description": "Omschrijving",
+	"market_form_models": "Model of modellen",
+	"market_form_price": "Prijs",
+	"market_form_location": "Locatie",
+	"market_form_contact": "Contactgegevens",
+	"market_form_contact_hint": "Hoe kan een geïnteresseerde je bereiken? Bijvoorbeeld een Facebook-profiel, e-mailadres of telefoonnummer. Wat je hier invult komt op de site te staan.",
+	"market_form_optional": "optioneel",
+	"market_form_submit": "Bericht opstellen",
+	"market_form_note_github": "Het bericht wordt geopend als nieuw issue op GitHub. Daarvoor is een GitHub-account nodig.",
+	"market_form_note_mailto": "Het bericht wordt geopend in je mailprogramma.",
+	"market_form_alt": "Liever niet via het formulier? Plaats de aanbieding in de Facebookgroep.",
+	"market_form_incomplete": "Vul in ieder geval een titel en een omschrijving in.",
+
+	"nav_market": "Marktplaats",
+	"home_card_market_title": "Marktplaats",
+	"home_card_market_body": "Aangeboden en gevraagd: melkrobots, onderdelen en randapparatuur.",
 
 	"footer_about_title": "Over deze site",
 	"footer_about_body": "Open source verzameling informatie over Fullwood melkrobots, bijgehouden door gebruikers.",

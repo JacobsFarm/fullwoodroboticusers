@@ -17,6 +17,7 @@
 			<ul>
 				<li><a href="{base}/reparaties/">{m.nav_repairs()}</a></li>
 				<li><a href="{base}/kosten/">{m.nav_costs()}</a></li>
+				<li><a href="{base}/marktplaats/">{m.nav_market()}</a></li>
 				<li><a href="{base}/socials/">{m.nav_socials()}</a></li>
 				<li><a href={feeds.group.href} rel="noopener">Fullwood Merlin M2 enthusiasts</a></li>
 				<li><a href={feeds.official.href} rel="noopener">Fullwood JOZ</a></li>

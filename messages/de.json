@@ -27,28 +27,193 @@
 	"home_card_repairs_title": "Reparaturen",
 	"home_card_repairs_body": "Häufige Störungen mit Symptomen, möglichen Ursachen und Prüfschritten.",
 	"home_card_costs_title": "Kostenübersicht",
-	"home_card_costs_body": "Jährliche Kostenposten für Wartung, Verbrauch und Ersatzteile. Im Aufbau.",
+	"home_card_costs_body": "Ein allgemeines Jahresbudget und ein Betriebsbeispiel mit dreizehn Jahren Rechnungen.",
 	"home_card_socials_title": "Socials",
 	"home_card_socials_body": "Beiträge aus den Kanälen von Fullwood JOZ und aus der Facebook-Gruppe.",
 	"home_card_link": "Öffnen",
+
+	"home_community_title": "Ein gemeinsames Projekt",
+	"home_community_body": "Diese Seite gehört der Community rund um Fullwood: Landwirten, Händlern und anderen Interessierten. Sie ist kein Werbekanal.",
+	"home_community_open": "Der Quellcode ist vollständig offen. Jeder kann beitragen: Texte ergänzen, eine Störung hinzufügen, einen Fehler korrigieren.",
+	"home_community_disagree": "Anderer Meinung? Melde es in den Issues oder schicke einen Pull Request. Er wird vor dem Zusammenführen geprüft.",
+	"home_community_cta_repo": "Quellcode ansehen",
+	"home_community_cta_issues": "Zu den Issues",
 
 	"home_models_title": "Modelle",
 	"home_models_intro": "Diese Seite behandelt den Merlin M2 und die Generationen davor.",
 	"home_models_note": "Daten werden ergänzt",
 
 	"costs_title": "Kostenübersicht",
-	"costs_intro": "Übersicht der jährlichen Kostenposten eines Fullwood Melkroboters, auf Basis von Zahlen der Nutzer.",
-	"costs_wip_title": "Im Aufbau",
-	"costs_wip_body": "Diese Seite wird gefüllt, sobald Zahlen gesammelt sind. Die Gliederung unten steht bereit.",
-	"costs_planned_title": "Geplante Abschnitte",
-	"costs_plan_1": "Wartungsvertrag und Stundensätze",
-	"costs_plan_2": "Verschleißteile: Zitzengummis, Schläuche, Filter",
-	"costs_plan_3": "Reinigungsmittel und Verbrauch",
-	"costs_plan_4": "Energie, Wasser und Druckluft",
-	"costs_plan_5": "Große Bauteile und Lebensdauer",
-	"costs_plan_6": "Kosten pro Kuh und pro 100 kg Milch",
-	"costs_contribute_title": "Zahlen einreichen",
-	"costs_contribute_body": "Rechnungen oder Jahressummen können in der Gruppe gepostet werden. Sie werden hier anonymisiert aufgenommen.",
+
+	"costs_intro": "Was kostet ein Fullwood Merlin pro Jahr? Zuerst ein allgemeines Budget, dann ein Milchviehbetrieb, der alle Rechnungen aufbewahrt hat.",
+
+	"costs_why_title": "Warum diese Übersicht",
+	"costs_why_1": "Beim Kauf eines Melkroboters geht es vor allem um den Preis des Roboters selbst. Was er danach jedes Jahr an Reinigungsmitteln, Ersatzteilen, Wartung, Lizenzen, Wasser und Strom kostet, ist viel schwerer herauszufinden.",
+	"costs_why_2": "Die Anleitung nennt Verbrauchswerte, aber die Praxis weicht davon ab. Bei 180 Melkungen pro Tag liegt der gemessene Verbrauch von Dipp- und Desinfektionsmittel bei 20 und 16 Kanistern pro Jahr, die Betriebsanleitung kommt auf 65.",
+	"costs_why_3": "Deshalb steht hier ein Budget auf Basis des tatsächlichen Verbrauchs, mit der Berechnung hinter jedem Posten. So kannst du es für deinen Betrieb anpassen: mehr oder weniger Melkungen, andere Preise.",
+	"costs_why_4": "Außerdem ändern sich Preise schnell. Saurer Reiniger kostet heute etwa {acid} mehr als 2019, Strom mehr als doppelt so viel wie der zuvor notierte Preis. Eine alte Kostenaufstellung ist schnell überholt.",
+	"costs_why_note_title": "Ein Richtwert, kein Angebot",
+	"costs_why_note_body": "Die Beträge stammen von einem Nutzer und zeigen die Größenordnung. Dein Betrieb, deine Region und dein Lieferant können abweichen.",
+
+	"costs_basis_title": "Grundlage",
+	"costs_basis_body": "Alle Beträge gehen von {milkings} Melkungen, {hot} Heißreinigungen und {rinses} Spülungen des Merlin M2 pro Tag aus. Das sind {perYear} Melkungen pro Jahr.",
+
+	"costs_budget_title": "Allgemeines Jahresbudget",
+	"costs_budget_lede": "Was ein Merlin M2 pro Jahr an Betriebsmitteln, Wasser, Strom, Wartung und Lizenzen kostet.",
+
+	"costs_total_label": "Gesamt pro Jahr",
+	"costs_total_hint": "ohne unvorhergesehene Reparaturen",
+
+	"costs_per_milking_label": "Pro Melkung",
+	"costs_per_milking_hint": "Gesamt geteilt durch Melkungen pro Jahr",
+
+	"costs_biggest_label": "Größter Posten",
+	"costs_biggest_hint": "{share} des Gesamtbetrags",
+
+	"costs_share_title": "Wohin geht das Geld?",
+	"costs_share_aria": "Aufteilung der Jahreskosten nach Kategorien",
+
+	"costs_unforeseen_value": "nicht planbar",
+
+	"costs_detail_title": "Alle Posten",
+
+	"costs_col_item": "Posten",
+	"costs_col_year": "Pro Jahr",
+
+	"costs_group_total": "Zwischensumme",
+
+	"costs_grand_total": "Gesamt pro Jahr",
+
+	"costs_prices_title": "Preise steigen",
+	"costs_prices_lede": "Der Preis von 2023 neben früheren Preisen aus Rechnungen und Bestellungen.",
+	"costs_prices_item": "Produkt",
+	"costs_prices_earlier": "Früher",
+	"costs_prices_now": "2023",
+	"costs_prices_change": "Änderung",
+	"costs_prices_unknown_date": "Datum unbekannt",
+	"costs_prices_note": "Die Änderung ist gegenüber dem ältesten Preis in der Übersicht berechnet. Bei Wasser und Strom ist das Datum des alten Preises nicht bekannt.",
+
+	"costs_farms_title": "Betriebsbeispiele",
+	"costs_farms_lede": "Ein Budget ist eine Rechnung. Hier siehst du, wie es in der Praxis war: die Rechnungen eines echten Betriebs, Jahr für Jahr.",
+
+	"costs_farm1_title": "Milchviehbetrieb mit Merlin und Merlin M2",
+	"costs_farm1_body": "Dreizehn Jahre ein Merlin, seit 2022 ein Merlin M2. Alle Kosten pro Jahr, pro Posten und pro Liter Milch.",
+	"costs_farm1_meta": "{milkings} Melkungen pro Tag · 2009 bis 2026",
+	"costs_farm1_stat": "{cents} pro Liter Milch über 13 Jahre, Anschaffung und Wartung zusammen",
+
+	"costs_farm_open": "Beispiel ansehen",
+
+	"costs_contribute_title": "Dein Betrieb dabei?",
+	"costs_contribute_body": "Rechnungen oder Jahressummen kannst du in der Gruppe posten. Sie werden hier anonymisiert aufgenommen.",
+
+	"farm_back": "Zurück zur Kostenübersicht",
+
+	"farm_kicker": "Betriebsbeispiel",
+
+	"farm_title": "13 Jahre Merlin und der Wechsel zum M2",
+
+	"farm_intro": "Ein Milchviehbetrieb mit {milkings} Melkungen pro Tag. Seit 2009 ein Merlin, seit August 2022 ein Merlin M2. Hier stehen alle erfassten Kosten: pro Jahr, pro Posten und pro Liter Milch.",
+
+	"farm_stat_years": "13 Jahre",
+	"farm_stat_years_label": "mit dem ersten Merlin gemolken",
+	"farm_stat_total_label": "Anschaffung plus Wartung in 13 Jahren",
+	"farm_stat_cents_label": "pro Liter Milch, Anschaffung und Wartung zusammen",
+	"farm_stat_m2_label": "Durchschnitt pro Jahr mit dem M2 (Jahr 1 bis 4)",
+
+	"farm_why_title": "Warum diese Zahlen",
+	"farm_why_1": "Rechnungen verschwinden schnell in der Buchhaltung und werden selten über die Jahre addiert. Dieser Betrieb hat alle Rechnungen rund um den Melkroboter aufbewahrt und pro Jahr addiert, sodass du sehen kannst, was ein Roboter über seine gesamte Lebensdauer kostet.",
+	"farm_why_2": "Ziel ist nicht zu beweisen, dass ein Roboter billig oder teuer ist, sondern zu zeigen, was zu erwarten ist: welche Posten fix sind, welche schwanken und was eine große Reparatur mit einem Jahr macht.",
+	"farm_why_3": "Die Faustregel dieses Landwirts: Ein Melkroboter kostet 3 bis 5 Cent pro Liter Milch.",
+
+	"farm_method_title": "Was mitgezählt wurde und was nicht",
+	"farm_method_1": "Alle Beträge stammen aus Rechnungen des Händlers und von Lieferanten für Reinigungsmittel.",
+	"farm_method_2": "Einmalige Anschaffungen wie die Installation, eine neue Kühlmaschine oder eine Weidebox stehen separat und sind nicht in den Jahreskosten enthalten.",
+	"farm_method_3": "Wasser und Strom sind nicht enthalten.",
+	"farm_method_4": "Die Kalenderjahre 2009 bis 2023 enthalten MwSt., die Nutzungsjahre des Merlin M2 nicht.",
+
+	"farm_years_title": "Kosten pro Jahr, 2009 bis 2023",
+	"farm_years_lede": "Was der Roboter pro Kalenderjahr an Wartung, Ersatzteilen und Lizenzen kostete. Einmalige Posten stehen unter dem Diagramm.",
+
+	"farm_series_dealer": "Händler: Wartung, Teile, Lizenzen",
+	"farm_series_third": "Reinigungsmittel von Dritten",
+	"farm_series_estimate": "Schätzung, keine Daten",
+
+	"farm_marker_m2": "Merlin M2 ab Aug. 2022",
+
+	"farm_years_aria": "Kosten pro Kalenderjahr von 2009 bis 2023",
+
+	"farm_total": "Gesamt",
+
+	"farm_years_avg": "Im Durchschnitt {avg} pro Jahr über die 13 Jahre mit dem ersten Merlin (2009 bis 2022). Für 2012 und 2013 gibt es keine Daten; dort wurden {estimate} pro Jahr geschätzt.",
+	"farm_years_avg_note": "Dieser Durchschnitt folgt der Summe von {total}, die der Eigentümer um {adjustment} korrigiert hat.",
+
+	"farm_table_toggle": "Tabelle mit allen Jahren",
+	"farm_table_year": "Jahr",
+	"farm_table_cost": "Jahreskosten",
+	"farm_table_excluded": "Nicht mitgezählt",
+	"farm_table_note": "Anmerkung",
+
+	"farm_estimate_tag": "Schätzung",
+
+	"farm_m2_title": "Merlin M2: Jahr für Jahr",
+	"farm_m2_lede": "Pro Nutzungsjahr ab der Installation im August 2022, aufgeteilt in Kategorien. Öffne ein Jahr, um jede Zeile zu sehen.",
+	"farm_m2_aria": "Kosten pro Nutzungsjahr des Merlin M2, nach Kategorie",
+
+	"farm_year": "Jahr {n}",
+	"farm_year_ongoing": "laufend",
+
+	"farm_ongoing_note": "Jahr 4 läuft noch und ist nicht vollständig; die Summe wächst noch.",
+
+	"farm_per_liter": "Pro Liter",
+
+	"farm_liters": "Liter Milch",
+
+	"farm_labour": "Davon Arbeit",
+	"farm_labour_unknown": "nicht erfasst",
+
+	"farm_lines_open": "Alle Zeilen von Jahr {n}",
+
+	"farm_oneoffs": "Nicht mitgezählt (einmalig)",
+
+	"farm_overview_title": "Die vier Jahre im Vergleich",
+
+	"farm_col_category": "Kategorie",
+	"farm_col_avg": "Durchschnitt",
+
+	"farm_row_total": "Gesamt",
+	"farm_row_per_liter": "Pro Liter Milch",
+
+	"farm_compare_title": "Budget und Praxis im Vergleich",
+	"farm_compare_lede": "Das allgemeine Budget rechnet mit 180 Melkungen pro Tag, dieser Betrieb melkt 120-mal pro Tag. Unten der Durchschnitt der Jahre 1 bis 4 neben dem Budget, ohne Wasser und Strom.",
+	"farm_compare_budget": "Budget (180 pro Tag)",
+	"farm_compare_practice": "Praxis (120 pro Tag)",
+	"farm_compare_not_budgeted": "nicht budgetiert",
+	"farm_compare_conclusion": "Der Unterschied liegt vor allem bei Wartung, Reparaturen sowie Milchtank und Kühlung. Diese Posten fehlen im Budget oder wurden niedriger geschätzt. Chemikalien und Verbrauchsmaterial fallen in der Praxis niedriger aus, passend zu 120 statt 180 Melkungen pro Tag.",
+
+	"farm_life_title": "Anschaffung und Gesamtkosten pro Liter",
+	"farm_life_lede": "Über 13 Jahre mit dem ersten Merlin: was die Installation kostete und was die Wartung dazukam.",
+	"farm_life_aria": "Aufteilung von Anschaffung und Wartung über 13 Jahre",
+	"farm_life_purchase": "Anschaffung der kompletten Anlage (2009)",
+	"farm_life_maintenance": "Wartung und Reparaturen (13 Jahre)",
+	"farm_life_liters": "Insgesamt {liters} Liter Milch in 13 Jahren. Anschaffung {purchase} pro Liter, Wartung {maintenance} pro Liter.",
+
+	"farm_purchases_title": "Anschaffungspreise",
+	"farm_purchases_note": "Die komplette Anlage von 2009 enthält Montage, Vorarbeiten, Schrittzähler und Zubehör und liegt daher höher als Roboter und Tank zusammen.",
+
+	"farm_col_excl": "Netto",
+	"farm_col_vat": "MwSt.",
+	"farm_col_incl": "Brutto",
+
+	"farm_life_remarks": "Der Ersatz durch den Merlin M2 fiel günstiger aus, durch weniger Arbeit und Anpassungen am Stall. Laut Eigentümer halten der Schraubenkompressor und der Milchtank noch Jahre.",
+
+	"farm_notes_title": "Verwendete Annahmen",
+	"farm_notes_1": "{milkings} Melkungen pro Tag.",
+	"farm_notes_2": "Merlin M2 im Januar 2022 gekauft, am 18. August 2022 installiert.",
+	"farm_notes_3": "Chemikalien sind ein laufender Vorrat mit Bestellspitzen, daher kann sich der Betrag pro Jahr verschieben.",
+	"farm_notes_4": "Die Zeiträume der M2-Jahre sind aus den Rechnungsdaten abgeleitet.",
+
+	"farm_cta_title": "Auch deine Zahlen teilen?",
+	"farm_cta_back": "Zur Kostenübersicht",
 
 	"repairs_title": "Reparaturen",
 	"repairs_intro": "Störungen, die häufiger auftreten, mit Symptomen, möglichen Ursachen und Prüfschritten.",
@@ -86,6 +251,48 @@
 	"socials_consent_title": "Externe Inhalte laden",
 	"socials_consent_body": "Die Timelines kommen von Facebook und YouTube. Diese Anbieter können dabei Cookies setzen. Laden?",
 	"socials_consent_accept": "Laden",
+
+	"market_title": "Marktplatz",
+	"market_intro": "Von Nutzern angeboten und gesucht: Melkroboter, Ersatzteile und Peripherie.",
+	"market_search_label": "Suchen",
+	"market_search_placeholder": "Nach Modell, Teil oder Ort suchen",
+	"market_filter_all": "Alle",
+	"market_kind_offer": "Angeboten",
+	"market_kind_wanted": "Gesucht",
+	"market_status_available": "Verfügbar",
+	"market_status_reserved": "Reserviert",
+	"market_status_sold": "Verkauft",
+	"market_results": "{count} Anzeigen",
+	"market_none": "Keine Anzeigen für diese Auswahl.",
+	"market_price": "Preis",
+	"market_location": "Ort",
+	"market_posted": "Eingestellt",
+	"market_models": "Modelle",
+	"market_contact": "Kontakt",
+	"market_example": "Beispiel",
+	"market_disclaimer_title": "Zu den Anzeigen",
+	"market_disclaimer_body": "Anzeigen werden von Nutzern eingestellt. Diese Seite prüft sie nicht, vermittelt nicht und ist an keinem Geschäft beteiligt. Preis, Besichtigung, Transport und Zahlung werden untereinander vereinbart.",
+	"market_submit_title": "Anzeige einstellen",
+	"market_submit_body": "Felder ausfüllen. Das Formular stellt eine Nachricht zusammen und öffnet sie; danach wird die Anzeige hier aufgenommen.",
+	"market_form_kind": "Art",
+	"market_form_category": "Kategorie",
+	"market_form_headline": "Titel",
+	"market_form_description": "Beschreibung",
+	"market_form_models": "Modell oder Modelle",
+	"market_form_price": "Preis",
+	"market_form_location": "Ort",
+	"market_form_contact": "Kontaktdaten",
+	"market_form_contact_hint": "Wie können Interessenten dich erreichen? Zum Beispiel ein Facebook-Profil, eine E-Mail-Adresse oder eine Telefonnummer. Was du hier einträgst, erscheint auf der Seite.",
+	"market_form_optional": "optional",
+	"market_form_submit": "Nachricht verfassen",
+	"market_form_note_github": "Die Nachricht wird als neues Issue auf GitHub geöffnet. Dafür ist ein GitHub-Konto nötig.",
+	"market_form_note_mailto": "Die Nachricht wird in deinem E-Mail-Programm geöffnet.",
+	"market_form_alt": "Lieber nicht über das Formular? Stelle die Anzeige in der Facebook-Gruppe ein.",
+	"market_form_incomplete": "Bitte mindestens Titel und Beschreibung ausfüllen.",
+
+	"nav_market": "Marktplatz",
+	"home_card_market_title": "Marktplatz",
+	"home_card_market_body": "Angeboten und gesucht: Melkroboter, Ersatzteile und Peripherie.",
 
 	"footer_about_title": "Über diese Seite",
 	"footer_about_body": "Quelloffene Sammlung von Informationen zu Fullwood Melkrobotern, gepflegt von Nutzern.",

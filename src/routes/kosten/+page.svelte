@@ -12,11 +12,14 @@
 		priceHistory,
 		lifetime,
 		farmFacts,
+		depreciation,
+		farmerValue,
 		type CostCategory,
 		type Locale
 	} from '$lib/data/costs';
 	import Seo from '$lib/components/Seo.svelte';
 	import ShareBar from '$lib/components/ShareBar.svelte';
+	import LineChart, { type LineSeries } from '$lib/components/LineChart.svelte';
 
 	const locale = $derived(getLocale() as Locale);
 	const money = (v: number, digits = 2) => eur(v, locale, digits);
@@ -80,6 +83,38 @@
 	function when(date: string | null): string {
 		return date ? monthYear(date, locale) : m.costs_prices_unknown_date();
 	}
+
+	/* ---------- waardevermindering ---------- */
+
+	const premium = $derived(pct(depreciation.farmerPremium, locale));
+	const ageLabel = (age: number) =>
+		age === 0 ? m.costs_value_new() : m.costs_value_years({ years: age });
+
+	const valueSeries = $derived<LineSeries[]>([
+		{
+			id: 'farmer',
+			label: m.costs_value_series_farmer({ premium }),
+			color: '#eb6834',
+			dashed: true,
+			points: depreciation.points.map((p) => ({ x: p.age, y: farmerValue(p) }))
+		},
+		{
+			id: 'base',
+			label: m.costs_value_series_base(),
+			color: 'var(--fw-blue)',
+			points: depreciation.points.map((p) => ({ x: p.age, y: p.value }))
+		}
+	]);
+
+	const valueRows = $derived(
+		depreciation.points.map((p) => ({
+			age: p.age,
+			label: ageLabel(p.age),
+			base: p.value,
+			farmer: farmerValue(p),
+			share: p.value / depreciation.newPrice
+		}))
+	);
 
 	const centsPerLiter = $derived(
 		cents((lifetime.purchase + lifetime.maintenance) / lifetime.liters, locale)
@@ -265,8 +300,65 @@
 	</div>
 </section>
 
+<!-- ============ Waardevermindering ============ -->
+<section class="fw-section fw-section--alt" id="waardevermindering">
+	<div class="fw-wrap">
+		<h2>{m.costs_value_title()}</h2>
+		<p class="fw-lede">{m.costs_value_lede({ price: money(depreciation.newPrice, 0) })}</p>
+
+		<div class="fw-card block">
+			<LineChart
+				series={valueSeries}
+				xTicks={depreciation.points.map((p) => p.age)}
+				formatX={ageLabel}
+				formatY={(v) => money(v, 0)}
+				ariaLabel={m.costs_value_chart_aria()}
+				xTitle={m.costs_value_x_title()}
+			/>
+		</div>
+
+		<div class="fw-card block table-wrap">
+			<table class="prices value">
+				<thead>
+					<tr>
+						<th scope="col">{m.costs_value_col_age()}</th>
+						<th scope="col" class="num">{m.costs_value_col_base()}</th>
+						<th scope="col" class="num">{m.costs_value_col_farmer()}</th>
+						<th scope="col" class="num">{m.costs_value_col_share()}</th>
+					</tr>
+				</thead>
+				<tbody>
+					{#each valueRows as row (row.age)}
+						<tr>
+							<th scope="row"><span class="line__name">{row.label}</span></th>
+							<td class="num">{money(row.base, 0)}</td>
+							<td class="num">{money(row.farmer, 0)}</td>
+							<td class="num">{pct(row.share, locale)}</td>
+						</tr>
+					{/each}
+				</tbody>
+			</table>
+		</div>
+
+		<div class="fw-note value__note">
+			<p><strong>{m.costs_value_note_title()}</strong></p>
+			<ul>
+				<li>{m.costs_value_note_1()}</li>
+				<li>{m.costs_value_note_2()}</li>
+				<li>{m.costs_value_note_3()}</li>
+				<li>
+					{m.costs_value_note_4({
+						premium,
+						end: money(depreciation.points[depreciation.points.length - 1].value, 0)
+					})}
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
 <!-- ============ Boerderijvoorbeelden ============ -->
-<section class="fw-section fw-section--alt" id="voorbeelden">
+<section class="fw-section" id="voorbeelden">
 	<div class="fw-wrap">
 		<h2>{m.costs_farms_title()}</h2>
 		<p class="fw-lede">{m.costs_farms_lede()}</p>
@@ -529,6 +621,22 @@
 		font-weight: 600;
 		font-variant-numeric: tabular-nums;
 		color: var(--fw-ink);
+	}
+
+	.value {
+		min-width: 28rem;
+	}
+
+	.value__note {
+		margin-top: 1.5rem;
+	}
+
+	.value__note ul {
+		margin: 0.5rem 0 0;
+		padding-left: 1.2rem;
+		display: grid;
+		gap: 0.5rem;
+		font-size: 0.95rem;
 	}
 
 	.small {

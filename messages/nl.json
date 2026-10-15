@@ -93,6 +93,24 @@
 	"costs_prices_unknown_date": "datum onbekend",
 	"costs_prices_note": "Het verschil is berekend ten opzichte van de oudste prijs in het overzicht. Bij water en stroom is de datum van de oude prijs niet bekend.",
 
+	"costs_value_title": "Waardevermindering van de robot",
+	"costs_value_lede": "Een schatting van wat een Merlin M2 na verloop van tijd nog opbrengt, uitgaande van een nieuwprijs van {price} excl. btw.",
+	"costs_value_chart_aria": "Geschatte restwaarde van een Merlin M2 naar leeftijd, bij een gewone verkoop en bij verkoop rechtstreeks aan een veehouder",
+	"costs_value_series_base": "Restwaarde (basisschatting)",
+	"costs_value_series_farmer": "Verkoop rechtstreeks aan een veehouder (ongeveer {premium} meer)",
+	"costs_value_x_title": "Leeftijd van de robot",
+	"costs_value_new": "Nieuw",
+	"costs_value_years": "{years} jaar",
+	"costs_value_col_age": "Leeftijd",
+	"costs_value_col_base": "Restwaarde",
+	"costs_value_col_farmer": "Verkoop aan veehouder",
+	"costs_value_col_share": "Van de nieuwprijs",
+	"costs_value_note_title": "Lees dit als een schatting",
+	"costs_value_note_1": "Dit zijn aannames, geen marktgegevens. Er is geen grote openbare tweedehandsmarkt voor de Merlin M2, dus er zijn nauwelijks verkoopprijzen om mee te vergelijken.",
+	"costs_value_note_2": "Fullwood is een kleine fabrikant van melkrobots. De vraag naar een gebruikte robot is daardoor beperkt en de kans op een koper is klein. Het vertrouwen in het merk moet nog groeien.",
+	"costs_value_note_3": "Er zijn bekende problemen met piekspanningen in de melkrobot. Bij een robot die bijna is afgeschreven kan dat de verkoopwaarde verder drukken.",
+	"costs_value_note_4": "De tweede lijn gaat uit van {premium} meer dan de basisschatting. De nieuwprijs is in beide lijnen gelijk. Tussen de meetpunten is een gelijkmatige daling aangenomen; van 10 tot 14 jaar zakt de waarde geleidelijk naar {end}.",
+
 	"costs_farms_title": "Boerderijvoorbeelden",
 	"costs_farms_lede": "Een begroting is een rekensom. Hier zie je wat het in de praktijk was: de facturen van een echt bedrijf, jaar voor jaar.",
 
@@ -188,7 +206,7 @@
 	"farm_compare_budget": "Begroting (180 per dag)",
 	"farm_compare_practice": "Praktijk (120 per dag)",
 	"farm_compare_not_budgeted": "niet begroot",
-	"farm_compare_conclusion": "Het verschil zit vooral in onderhoud, reparaties en melktank en koeling. Dat zijn posten die in de begroting ontbreken of lager zijn ingeschat. De chemicaliën en verbruiksmiddelen vallen in de praktijk lager uit, passend bij 120 in plaats van 180 melkingen per dag.",
+	"farm_compare_conclusion": "Het verschil zit vooral in onderhoud, reparaties, overige kosten en melktank en koeling. Dat zijn posten die in de begroting ontbreken of lager zijn ingeschat. De chemicaliën en verbruiksmiddelen vallen in de praktijk lager uit, passend bij 120 in plaats van 180 melkingen per dag.",
 
 	"farm_life_title": "Aanschaf en totale kosten per liter",
 	"farm_life_lede": "Over 13 jaar met de eerste Merlin: wat de installatie kostte en wat het onderhoud erbij kwam.",

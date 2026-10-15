@@ -93,6 +93,24 @@
 	"costs_prices_unknown_date": "Datum unbekannt",
 	"costs_prices_note": "Die Änderung ist gegenüber dem ältesten Preis in der Übersicht berechnet. Bei Wasser und Strom ist das Datum des alten Preises nicht bekannt.",
 
+	"costs_value_title": "Wertverlust des Roboters",
+	"costs_value_lede": "Eine Schätzung, was ein Merlin M2 im Lauf der Zeit noch wert ist, ausgehend von einem Neupreis von {price} netto.",
+	"costs_value_chart_aria": "Geschätzter Restwert eines Merlin M2 nach Alter, bei einem normalen Verkauf und bei Verkauf direkt an einen Landwirt",
+	"costs_value_series_base": "Restwert (Basisschätzung)",
+	"costs_value_series_farmer": "Verkauf direkt an einen Landwirt (etwa {premium} mehr)",
+	"costs_value_x_title": "Alter des Roboters",
+	"costs_value_new": "Neu",
+	"costs_value_years": "{years} Jahre",
+	"costs_value_col_age": "Alter",
+	"costs_value_col_base": "Restwert",
+	"costs_value_col_farmer": "Verkauf an Landwirt",
+	"costs_value_col_share": "Vom Neupreis",
+	"costs_value_note_title": "Bitte als Schätzung lesen",
+	"costs_value_note_1": "Das sind Annahmen, keine Marktdaten. Für den Merlin M2 gibt es keinen großen öffentlichen Gebrauchtmarkt, daher gibt es kaum Verkaufspreise zum Vergleich.",
+	"costs_value_note_2": "Fullwood ist ein kleiner Hersteller von Melkrobotern. Die Nachfrage nach einem gebrauchten Roboter ist daher begrenzt und die Chance auf einen Käufer gering. Das Vertrauen in die Marke muss noch wachsen.",
+	"costs_value_note_3": "Es sind Probleme mit Spannungsspitzen im Melkroboter bekannt. Bei einem fast abgeschriebenen Roboter kann das den Wiederverkaufswert weiter drücken.",
+	"costs_value_note_4": "Die zweite Linie geht von {premium} mehr als die Basisschätzung aus. Der Neupreis ist in beiden Linien gleich. Zwischen den Datenpunkten wird ein gleichmäßiger Rückgang angenommen; von 10 bis 14 Jahren sinkt der Wert allmählich auf {end}.",
+
 	"costs_farms_title": "Betriebsbeispiele",
 	"costs_farms_lede": "Ein Budget ist eine Rechnung. Hier siehst du, wie es in der Praxis war: die Rechnungen eines echten Betriebs, Jahr für Jahr.",
 
@@ -188,7 +206,7 @@
 	"farm_compare_budget": "Budget (180 pro Tag)",
 	"farm_compare_practice": "Praxis (120 pro Tag)",
 	"farm_compare_not_budgeted": "nicht budgetiert",
-	"farm_compare_conclusion": "Der Unterschied liegt vor allem bei Wartung, Reparaturen sowie Milchtank und Kühlung. Diese Posten fehlen im Budget oder wurden niedriger geschätzt. Chemikalien und Verbrauchsmaterial fallen in der Praxis niedriger aus, passend zu 120 statt 180 Melkungen pro Tag.",
+	"farm_compare_conclusion": "Der Unterschied liegt vor allem bei Wartung, Reparaturen, sonstigen Kosten sowie Milchtank und Kühlung. Diese Posten fehlen im Budget oder wurden niedriger geschätzt. Chemikalien und Verbrauchsmaterial fallen in der Praxis niedriger aus, passend zu 120 statt 180 Melkungen pro Tag.",
 
 	"farm_life_title": "Anschaffung und Gesamtkosten pro Liter",
 	"farm_life_lede": "Über 13 Jahre mit dem ersten Merlin: was die Installation kostete und was die Wartung dazukam.",

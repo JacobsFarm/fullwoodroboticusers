@@ -507,11 +507,11 @@ export const m2Years: GebruiksJaar[] = [
 			i('supplies', 183.89, L('Melkfilters (2 bestellingen)', 'Milk filters (2 orders)', 'Milchfilter (2 Bestellungen)')),
 			i('service', 1410.33, L('Onderhoudsbeurt (na 4 maanden)', 'Service visit (after 4 months)', 'Wartung (nach 4 Monaten)')),
 			i('service', 2101.21, L('Grote onderhoudsbeurt (na 8 maanden)', 'Major service visit (after 8 months)', 'Große Wartung (nach 8 Monaten)')),
-			i('repairs', 266.96, L('Dipspraypomp lekt, vervangen', 'Dip spray pump leaking, replaced', 'Dippsprühpumpe undicht, ersetzt')),
+			i('installation', 266.96, L('Dipspraypomp lekt, vervangen', 'Dip spray pump leaking, replaced', 'Dippsprühpumpe undicht, ersetzt')),
 			i('repairs', 291.94, L('Horizontaalband gebroken, vervangen', 'Horizontal belt broken, replaced', 'Horizontalband gerissen, ersetzt')),
 			i('repairs', 348.66, L('1 verticaalband gebroken, beide vervangen', '1 vertical belt broken, both replaced', '1 Vertikalband gerissen, beide ersetzt')),
 			i('repairs', 216.88, L('Kabelbreuk in printkaartenkast (UCC-arm)', 'Cable break in circuit board cabinet (UCC arm)', 'Kabelbruch im Platinenschrank (UCC-Arm)')),
-			i('repairs', 110.47, L('Dippomp vervangen (onder garantie)', 'Dip pump replaced (under warranty)', 'Dipppumpe ersetzt (Garantie)')),
+			i('installation', 110.47, L('Dippomp vervangen (onder garantie)', 'Dip pump replaced (under warranty)', 'Dipppumpe ersetzt (Garantie)')),
 			i('licenses', 412.5, L('Support- en updatecontract Merlin M2', 'Merlin M2 support and update contract', 'Support- und Updatevertrag Merlin M2')),
 			i('licenses', 412.5, L('Support- en updatecontract Merlin M2', 'Merlin M2 support and update contract', 'Support- und Updatevertrag Merlin M2')),
 			i('installation', 289.28, L('Oculus-reparatie melktank', 'Oculus repair, milk tank', 'Oculus-Reparatur Milchtank')),
@@ -532,7 +532,7 @@ export const m2Years: GebruiksJaar[] = [
 		from: '2024-11',
 		to: '2025-12',
 		liters: 480_000,
-		labour: 3326.5,
+		labour: 2847.25,
 		summary: L(
 			'Jaar met drie onderhoudsbeurten, een grotere reparatie aan een servo en een nieuwe koelmachine (eenmalig, niet meegeteld).',
 			'A year with three service visits, a larger servo repair and a new cooling machine (one-off, not counted).',
@@ -568,12 +568,12 @@ export const m2Years: GebruiksJaar[] = [
 		from: '2025-12',
 		to: '2026-10',
 		ongoing: true,
-		liters: 440_000,
-		labour: 2645.25,
+		liters: 490_000,
+		labour: 1995.25,
 		summary: L(
-			'Lopend jaar, nog niet compleet: vacuümpomp vervangen en een nieuwe borstel-unit.',
-			'Year in progress, not complete yet: vacuum pump replaced and a new brush unit.',
-			'Laufendes Jahr, noch nicht vollständig: Vakuumpumpe ersetzt und neue Bürsteneinheit.'
+			'Lopend jaar, nog niet compleet: vacuümpomp vervangen (eenmalig, niet meegeteld) en een nieuwe borstel-unit.',
+			'Year in progress, not complete yet: vacuum pump replaced (one-off, not counted) and a new brush unit.',
+			'Laufendes Jahr, noch nicht vollständig: Vakuumpumpe ersetzt (einmalig, nicht mitgezählt) und neue Bürsteneinheit.'
 		),
 		items: [
 			i('supplies', 740.99, L('Dipmiddel', 'Teat dip', 'Dippmittel')),
@@ -582,17 +582,24 @@ export const m2Years: GebruiksJaar[] = [
 			i('supplies', 46.55, L('Stappenteller: pootband en verzendkosten', 'Pedometer: leg strap and shipping', 'Schrittzähler: Beinband und Versand')),
 			i('service', 3075.62, L('1e onderhoudsbeurt', '1st service visit', '1. Wartung')),
 			i('service', 3184.3, L('2e onderhoudsbeurt', '2nd service visit', '2. Wartung')),
-			i('repairs', 2000, L('Tweedehands Buschmann-vacuümpomp (1 jaar oud) met frequentieregelaar', 'Second-hand Buschmann vacuum pump (1 year old) with frequency controller', 'Gebrauchte Buschmann-Vakuumpumpe (1 Jahr alt) mit Frequenzumrichter')),
-			i('repairs', 650, L('Vacuümpomp wisselen (8 uur)', 'Vacuum pump swap (8 hours)', 'Vakuumpumpe tauschen (8 Stunden)')),
 			i('repairs', 800, L('Borstel: nieuwe unit (kapotte kabel)', 'Brush: new unit (broken cable)', 'Bürste: neue Einheit (defektes Kabel)')),
 			i('repairs', 0, L('Borstel: draadbreuk, 2 keer zelf opgelost', 'Brush: wire break, fixed by the owner twice', 'Bürste: Drahtbruch, 2 × selbst behoben')),
-			i('repairs', 0, L('Dipmiddelpomp lekt (nog te repareren)', 'Dip pump leaking (still to be repaired)', 'Dippmittelpumpe undicht (noch zu reparieren)')),
+			i('installation', 0, L('Dipmiddelpomp lekt (nog te repareren)', 'Dip pump leaking (still to be repaired)', 'Dippmittelpumpe undicht (noch zu reparieren)')),
 			i('licenses', 420.75, L('Fullsense-licentie', 'Fullsense licence', 'Fullsense-Lizenz')),
 			i('licenses', 420.75, L('Softwarecontract Fullsense', 'Fullsense software contract', 'Softwarevertrag Fullsense')),
 			i('installation', 508.49, L('Abonnement koeling', 'Cooling subscription', 'Kühlungs-Abonnement')),
 			i('installation', 59.96, L('Magneetklepspoel vervangen (onder contract)', 'Solenoid valve coil replaced (under contract)', 'Magnetventilspule ersetzt (Vertrag)'))
 		],
-		oneOffs: []
+		oneOffs: [
+			{
+				amount: 2650,
+				label: L(
+					'Tweedehands Buschmann-vacuümpomp met frequentieregelaar, incl. 8 uur arbeid (€ 650)',
+					'Second-hand Buschmann vacuum pump with frequency controller, incl. 8 hours of labour (€650)',
+					'Gebrauchte Buschmann-Vakuumpumpe mit Frequenzumrichter, inkl. 8 Stunden Arbeit (650 €)'
+				)
+			}
+		]
 	}
 ];
 
@@ -733,6 +740,35 @@ export const purchases: { id: string; label: Localized; incl: number; excl: numb
 		vat: 0.21
 	}
 ];
+
+/* ------------------------------------------------------------------ */
+/* Waardevermindering van de robot (schatting)                         */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Schatting, geen marktgegevens: er is geen grote openbare tweedehandsmarkt voor
+ * de Merlin M2. Bedragen zijn excl. btw. De waarden tussen de punten zijn lineair
+ * (van 10 naar 14 jaar zakt de waarde geleidelijk naar € 5.000).
+ */
+export const depreciation = {
+	newPrice: 85_000,
+	/** Verkoop rechtstreeks aan een veehouder levert dit percentage méér op dan de basisschatting. */
+	farmerPremium: 0.1,
+	/** Leeftijd in jaren en geschatte restwaarde. */
+	points: [
+		{ age: 0, value: 85_000 },
+		{ age: 2, value: 45_000 },
+		{ age: 4, value: 30_000 },
+		{ age: 7, value: 25_000 },
+		{ age: 10, value: 10_000 },
+		{ age: 14, value: 5_000 }
+	]
+};
+
+/** Waarde bij verkoop aan een veehouder. Nieuwprijs blijft gelijk; daarna het toeslagpercentage. */
+export function farmerValue(point: { age: number; value: number }): number {
+	return point.age === 0 ? point.value : point.value * (1 + depreciation.farmerPremium);
+}
 
 export const farmFacts = {
 	milkingsPerDay: 120,

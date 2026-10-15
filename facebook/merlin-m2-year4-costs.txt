@@ -1,10 +1,10 @@
 Merlin M2 – year 4 total costs so far (Dec 2025 – Oct 2026, excl. VAT)
 120 milkings a day · 490,000 litres of milk
 
-Service visits (2)                              € 6,259.92   59%
+Service visits (2)                              € 5,869.38   55%
 Chemicals (dip, acid, alkaline)                 € 2,108.91   20%
+Repairs                                         € 1,190.54   11%
 Licences & software updates                       € 841.50    8%
-Repairs                                           € 800.00    8%
 Milk tank & cooling                               € 568.45    5%
 Parts & consumables                                € 46.55   <1%
 ----------------------------------------------------------------

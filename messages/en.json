@@ -206,7 +206,7 @@
 	"farm_compare_budget": "Budget (180 a day)",
 	"farm_compare_practice": "Practice (120 a day)",
 	"farm_compare_not_budgeted": "not budgeted",
-	"farm_compare_conclusion": "The difference is mostly in service, repairs, other costs and the milk tank and cooling. These items are missing from the budget or were estimated lower. Chemicals and consumables come out lower in practice, in line with 120 instead of 180 milkings a day.",
+	"farm_compare_conclusion": "The difference is mostly in service, repairs and the milk tank and cooling. These items are missing from the budget or were estimated lower. Chemicals and consumables come out lower in practice, in line with 120 instead of 180 milkings a day.",
 
 	"farm_life_title": "Purchase and total cost per litre",
 	"farm_life_lede": "Over 13 years with the first Merlin: what the installation cost and what maintenance added.",
